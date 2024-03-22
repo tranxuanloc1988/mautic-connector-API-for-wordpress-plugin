@@ -60,7 +60,7 @@ function send_user_data_to_mautic_get_id($user_id) {
                 update_user_meta($user_id, 'mautic_contact_id', $mautic_contact_id);
 
                 // Add the newly registered user to the Mautic segment
-                add_user_to_mautic_segment($mautic_contact_id, '4'); // Replace '1' with your segment ID
+                add_user_to_mautic_segment($mautic_contact_id, '3'); // Replace '1' with your segment ID
             } else {
                 error_log('Mautic API Response does not contain contact ID.');
             }
